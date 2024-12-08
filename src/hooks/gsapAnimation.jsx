@@ -82,11 +82,55 @@ export const useHeroPhotoLevitate = (imgs, heroRef) => {
         y: 0,
       },
       {
-        y: "-40%",
+        y: "-30%",
         ease: Expo.easeInOut,
         scrollTrigger: {
           trigger: heroRef.current,
           scrub: 1,
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
+  }, []);
+};
+
+// Featured
+export const useFeatureLeftShutterUnveil = (item, trig) => {
+  useEffect(() => {
+    gsap.fromTo(
+      item.current,
+      {
+        height: "100%",
+      },
+      {
+        height: 0,
+        duration: 1,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: trig.current,
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
+  }, []);
+};
+export const useFeatureRightShutterUnveil = (item, trig) => {
+  useEffect(() => {
+    gsap.fromTo(
+      item.current,
+      {
+        width: "100%",
+      },
+      {
+        width: 0,
+        duration: 1,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: trig.current,
+          start: "top center",
+          end: "bottom center",
           toggleActions: "play reverse play reverse",
         },
       }

@@ -1,9 +1,11 @@
+import FeatureSec from "../components/FeatureSec";
 import Hero from "../components/Hero";
 
 const Home = () => {
   return (
     <div>
       <Hero />
+      <FeatureSec />
       <p style={{ fontSize: "2rem" }}>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis autem
         ratione harum voluptate dolorum, tenetur quisquam officia quidem nam
