@@ -37,7 +37,7 @@ body {
   margin: 0 auto;
 }
 section {
-  padding: 5vw 0;
+  padding: 8vw 0;
 }
 .section-title {
   font-size: 1.2rem;
@@ -189,4 +189,30 @@ section {
   width: 100%;
   background: var(--color-lighter);
   z-index: 1;
+}
+/* Marquee */
+.marquee-scroll {
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.marquee {
+  color: var(--color-light);
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 2rem;
+  transform: translateX(-100%);
+}
+.marquee-text {
+  font-size: 4rem;
+  font-family: "Poppins", "sans-serif";
+  text-transform: capitalize;
+}
+.marquee-icon {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
 }

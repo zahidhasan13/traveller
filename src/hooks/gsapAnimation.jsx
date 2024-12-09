@@ -137,3 +137,35 @@ export const useFeatureRightShutterUnveil = (item, trig) => {
     );
   }, []);
 };
+
+// Marquee scroll animation
+export const useMarqueeScrollAnimation = (arr, iconArr) => {
+  useEffect(() => {
+    const el = arr.map((item) => item.current);
+    const icon = iconArr.map((item) => item.current);
+
+    window.addEventListener("wheel", (e) => {
+      if (e.deltaY > 0) {
+        gsap.to(el, {
+          transform: "translateX(-400%)",
+          repeat: -1,
+          duration: 6,
+          ease: "none",
+        });
+        gsap.to(icon, {
+          rotate: 180,
+        });
+      } else {
+        gsap.to(el, {
+          transform: "translateX(0%)",
+          repeat: -1,
+          duration: 6,
+          ease: "none",
+        });
+        gsap.to(icon, {
+          rotate: 0,
+        });
+      }
+    });
+  }, []);
+};
