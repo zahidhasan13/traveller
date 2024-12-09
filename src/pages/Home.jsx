@@ -1,3 +1,4 @@
+import EventSec from "../components/EventSec";
 import FeatureSec from "../components/FeatureSec";
 import Hero from "../components/Hero";
 import Marquee from "../components/Marquee";
@@ -10,6 +11,7 @@ const Home = () => {
       <FeatureSec />
       <Marquee />
       <PopularSec />
+      <EventSec />
       <p style={{ fontSize: "2rem" }}>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis autem
         ratione harum voluptate dolorum, tenetur quisquam officia quidem nam

@@ -249,6 +249,7 @@ section {
   font-size: 6vw;
   line-height: 1;
   text-transform: uppercase;
+  font-family: "Bai Jamjuree", "sans-serif";
   color: var(--color-lighter);
   mix-blend-mode: color-dodge;
   z-index: 1;
@@ -269,4 +270,57 @@ section {
   background-position: center center;
   width: 100%;
   height: 100vh;
+}
+/* Event Section */
+.event-container {
+  background: var(--color-light);
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  padding: 3vw;
+  position: relative;
+}
+.event-card {
+  width: 20%;
+  flex-shrink: 0;
+  background: var(--color-lighter);
+  padding: 1rem;
+  border-radius: 1rem;
+  /* transform: translateX(-370%); */
+}
+.event-img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.event-title {
+  font-size: 1.5rem;
+  color: var(--color-darker);
+  font-family: "Bai Jamjuree", "sans-serif";
+  height: 3rem;
+  margin-top: 0.5rem;
+}
+.event-date,
+.event-location {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.event-description {
+  font-size: 1.1rem;
+  color: var(--color-dark);
+  height: 7rem;
+  margin-top: 1rem;
+}
+.event-btn {
+  width: 100%;
+  background: var(--color-primary);
+  color: var(--color-lighter);
+  font-size: 2rem;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.event-btn:hover {
+  background: var(--color-light);
+  color: var(--color-primary);
 }
