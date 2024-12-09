@@ -169,3 +169,90 @@ export const useMarqueeScrollAnimation = (arr, iconArr) => {
     });
   }, []);
 };
+
+// Custom Cursor
+export const useCustomCursor = (item) => {
+  useEffect(() => {
+    document.addEventListener("mousemove", (e) => {
+      gsap.to(item.current, {
+        x: e.x,
+        y: e.y,
+        duration: 1,
+        ease: "back.out",
+      });
+    });
+  }, []);
+};
+
+// Popular Destination
+export const usePopularImage = (item) => {
+  useEffect(() => {
+    const el = item.current;
+
+    gsap.fromTo(
+      el,
+      {
+        x: 0,
+        width: 0,
+      },
+      {
+        x: "30%",
+        width: "100%",
+        duration: 1,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: el,
+          start: "top center",
+          end: "bottom top",
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
+  }, []);
+};
+export const usePopularTitle = (item, trig) => {
+  useEffect(() => {
+    const el = item.current;
+
+    gsap.fromTo(
+      el,
+      {
+        x: "30%",
+      },
+      {
+        x: 0,
+        duration: 1,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: trig.current,
+          start: "top center",
+          end: "bottom top",
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
+  }, []);
+};
+export const usePopularCategory = (item, trig) => {
+  useEffect(() => {
+    const el = item.current;
+
+    gsap.fromTo(
+      el,
+      {
+        x: "-100vw",
+      },
+      {
+        x: 0,
+        duration: 1,
+        ease: Expo.easeInOut,
+        scrollTrigger: {
+          trigger: trig.current,
+          start: "top center",
+          end: "bottom top",
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
+  }, []);
+};

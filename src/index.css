@@ -216,3 +216,57 @@ section {
   display: flex;
   align-items: center;
 }
+/* cursor */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: 2px solid var(--color-primary);
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  z-index: 1000;
+}
+/* Popular Section */
+.popular-container {
+  background: var(--color-primary);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 10vw;
+  padding: 10vw;
+}
+.popular-item {
+  position: relative;
+  width: 50%;
+}
+.popular-title {
+  position: absolute;
+  top: 10%;
+  left: -50%;
+  font-size: 6vw;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--color-lighter);
+  mix-blend-mode: color-dodge;
+  z-index: 1;
+}
+.popular-category {
+  position: absolute;
+  left: 0;
+  bottom: -7%;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--color-lighter);
+  letter-spacing: 1rem;
+  z-index: 1;
+}
+.popular-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+}
