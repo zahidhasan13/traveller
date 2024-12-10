@@ -1,5 +1,11 @@
+import PopularSec from "../components/PopularSec";
+
 const PopularDestination = () => {
-  return <div>Popular Destination</div>;
+  return (
+    <div>
+      <PopularSec />
+    </div>
+  );
 };
 
 export default PopularDestination;

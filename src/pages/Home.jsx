@@ -3,6 +3,7 @@ import FeatureSec from "../components/FeatureSec";
 import Hero from "../components/Hero";
 import Marquee from "../components/Marquee";
 import PopularSec from "../components/PopularSec";
+import TestimonialSec from "../components/TestimonialSec";
 
 const Home = () => {
   return (
@@ -10,8 +11,9 @@ const Home = () => {
       <Hero />
       <FeatureSec />
       <Marquee />
-      <PopularSec />
       <EventSec />
+      <PopularSec />
+      <TestimonialSec />
       <p style={{ fontSize: "2rem" }}>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis autem
         ratione harum voluptate dolorum, tenetur quisquam officia quidem nam

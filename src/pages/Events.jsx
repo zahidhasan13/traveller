@@ -1,5 +1,11 @@
+import EventSec from "../components/EventSec";
+
 const Events = () => {
-  return <div>Events</div>;
+  return (
+    <div>
+      <EventSec />
+    </div>
+  );
 };
 
 export default Events;

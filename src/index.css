@@ -312,3 +312,29 @@ section {
 .event-desc {
   font-size: 1.2rem;
 }
+.testimonial-item {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5rem 0;
+  font-family: "Bai Jamjuree", "sans-serif";
+}
+.testimonial-text {
+  font-size: 3rem;
+}
+.testimonial-name {
+  font-size: 2rem;
+  line-height: 1;
+  margin: 2rem 0;
+}
+.testimonial-location {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--color-primary);
+}
+.swiper-pagination-bullet-active {
+  background: var(--color-primary);
+}
