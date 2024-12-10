@@ -1,4 +1,7 @@
-import EventItem from "./EventItem";
+// import EventItem from "./EventItem";
+
+import { useRef } from "react";
+import { useEventAnimation } from "../hooks/gsapAnimation";
 
 const events = [
   {
@@ -81,15 +84,32 @@ const events = [
 ];
 
 const EventSec = () => {
+  const eventCardRefs = useRef([]);
+  useEventAnimation(eventCardRefs.current);
   return (
     <section className="event">
       <div className="container">
         <h2 className="section-title">events</h2>
-      </div>
-      <div className="event-container">
-        {events.map((event) => (
-          <EventItem key={event.id} event={event} />
-        ))}
+
+        <div className="event-container">
+          {events.map((event, i) => (
+            <div
+              key={event.id}
+              className="event-card"
+              ref={(el) => (eventCardRefs.current[i] = el)}
+            >
+              <div className="event-left">
+                <img src={event.image} alt="" />
+              </div>
+              <div className="event-right">
+                <h2 className="event-title">{event.title}</h2>
+                <p className="event-date">Date: {event.date}</p>
+                <p className="event-location">Location: {event.location}</p>
+                <p className="event-desc">Description: {event.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

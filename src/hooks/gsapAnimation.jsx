@@ -256,3 +256,30 @@ export const usePopularCategory = (item, trig) => {
     );
   }, []);
 };
+// Event Section
+export const useEventAnimation = (arr) => {
+  useEffect(() => {
+    if (!arr || arr.length === 0) return; // Prevent errors if `arr` is empty or undefined
+
+    // Loop through each element in the array
+    arr.forEach((item, index) => {
+      const direction = index % 2 === 0 ? "-100%" : "100%"; // Determine animation direction
+
+      gsap.fromTo(
+        item,
+        { opacity: 0, x: direction },
+        {
+          opacity: 1,
+          x: "0%",
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: item,
+            start: "top 50%",
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+    });
+  }, []);
+};
