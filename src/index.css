@@ -391,3 +391,38 @@ section {
 .btn-send:hover {
   background: var(--color-darker);
 }
+/* Footer */
+.footer {
+  background: var(--color-primary);
+  padding: 5rem;
+  text-align: center;
+  color: var(--color-lighter);
+  overflow: hidden;
+}
+.footer-logo {
+  font-size: 5rem;
+  color: var(--color-lighter);
+  font-family: "Bodoni Moda", "san-serif";
+  text-transform: uppercase;
+  line-height: 1;
+}
+.footer-subtitle {
+  font-size: 1.5rem;
+}
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+.footer-social a {
+  color: var(--color-lighter);
+}
+.footer-right {
+  font-size: 1.2rem;
+}
+.footer-right a {
+  color: var(--color-lighter);
+}

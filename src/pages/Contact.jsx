@@ -1,5 +1,11 @@
+import ContactSec from "../components/ContactSec";
+
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <div>
+      <ContactSec />
+    </div>
+  );
 };
 
 export default Contact;
