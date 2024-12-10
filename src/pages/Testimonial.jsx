@@ -1,5 +1,11 @@
+import TestimonialSec from "../components/TestimonialSec";
+
 const Testimonial = () => {
-  return <div>Testimonial</div>;
+  return (
+    <div>
+      <TestimonialSec />
+    </div>
+  );
 };
 
 export default Testimonial;

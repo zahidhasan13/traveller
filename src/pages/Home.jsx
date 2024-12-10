@@ -1,3 +1,4 @@
+import ContactSec from "../components/ContactSec";
 import EventSec from "../components/EventSec";
 import FeatureSec from "../components/FeatureSec";
 import Hero from "../components/Hero";
@@ -14,6 +15,7 @@ const Home = () => {
       <EventSec />
       <PopularSec />
       <TestimonialSec />
+      <ContactSec></ContactSec>
       <p style={{ fontSize: "2rem" }}>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis autem
         ratione harum voluptate dolorum, tenetur quisquam officia quidem nam

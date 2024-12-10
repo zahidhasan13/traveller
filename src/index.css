@@ -338,3 +338,56 @@ section {
 .swiper-pagination-bullet-active {
   background: var(--color-primary);
 }
+/* Contact */
+.contact-content {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+}
+.contact-title {
+  font-size: 3rem;
+  font-family: "Syncopate", "san-serif";
+  text-transform: lowercase;
+  color: var(--color-primary);
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.form-control input,
+.form-control textarea {
+  font-size: 1.6rem;
+  padding: 1rem;
+  background: transparent;
+  border-bottom: 1px solid var(--color-light);
+}
+.form-control input:focus,
+.form-control textarea:focus {
+  border-bottom: 1px solid var(--color-primary);
+}
+.form-control input::placeholder,
+.form-control textarea::placeholder {
+  color: #707070;
+}
+.btn-send {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 1.4rem 4.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  background: var(--color-primary);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  align-self: end;
+}
+.btn-send:hover {
+  background: var(--color-darker);
+}

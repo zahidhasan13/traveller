@@ -203,7 +203,7 @@ export const usePopularImage = (item) => {
         scrollTrigger: {
           trigger: el,
           start: "top center",
-          end: "bottom top",
+          end: "bottom center",
           toggleActions: "play reverse play reverse",
         },
       }
@@ -259,11 +259,10 @@ export const usePopularCategory = (item, trig) => {
 // Event Section
 export const useEventAnimation = (arr) => {
   useEffect(() => {
-    if (!arr || arr.length === 0) return; // Prevent errors if `arr` is empty or undefined
+    if (!arr || arr.length === 0) return;
 
-    // Loop through each element in the array
     arr.forEach((item, index) => {
-      const direction = index % 2 === 0 ? "-100%" : "100%"; // Determine animation direction
+      const direction = index % 2 === 0 ? "-100%" : "100%";
 
       gsap.fromTo(
         item,
@@ -281,5 +280,33 @@ export const useEventAnimation = (arr) => {
         }
       );
     });
+  }, []);
+};
+
+// Contact
+export const useContactAnimation = (arr, trig) => {
+  useEffect(() => {
+    const el = arr.map((item) => item.current);
+
+    gsap.fromTo(
+      el,
+      {
+        x: "100vw",
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        stagger: 0.5,
+        ease: "back.inOut",
+        scrollTrigger: {
+          trigger: trig.current,
+          start: "top center",
+          end: "bottom center",
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
   }, []);
 };
