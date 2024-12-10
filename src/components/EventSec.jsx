@@ -87,7 +87,7 @@ const EventSec = () => {
   const eventCardRefs = useRef([]);
   useEventAnimation(eventCardRefs.current);
   return (
-    <section className="event">
+    <section id="events" className="event">
       <div className="container">
         <h2 className="section-title">events</h2>
 

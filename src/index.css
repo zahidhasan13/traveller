@@ -64,6 +64,7 @@ section {
 .right-links a {
   color: var(--color-dark);
   position: relative;
+  cursor: pointer;
 }
 .left-links a:after,
 .right-links a:after {
@@ -83,6 +84,7 @@ section {
 }
 .logo a {
   color: inherit;
+  cursor: pointer;
 }
 
 /* Hero */
@@ -298,6 +300,7 @@ section {
   object-fit: cover;
 }
 .event-right {
+  width: 60%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -393,15 +396,14 @@ section {
 }
 /* Footer */
 .footer {
-  background: var(--color-primary);
   padding: 5rem;
   text-align: center;
-  color: var(--color-lighter);
+  color: var(--color-primary);
   overflow: hidden;
 }
 .footer-logo {
   font-size: 5rem;
-  color: var(--color-lighter);
+  color: var(--color-primary);
   font-family: "Bodoni Moda", "san-serif";
   text-transform: uppercase;
   line-height: 1;
@@ -418,11 +420,54 @@ section {
   margin: 2rem 0;
 }
 .footer-social a {
-  color: var(--color-lighter);
+  color: var(--color-primary);
 }
 .footer-right {
   font-size: 1.2rem;
 }
 .footer-right a {
-  color: var(--color-lighter);
+  color: var(--color-darker);
+}
+
+/* Responsive css */
+@media (max-width: 768px) {
+  .container {
+    max-width: 95vw;
+  }
+  section {
+    padding: 5vw 0;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .logo {
+    order: -1;
+  }
+  .features {
+    grid-template-columns: 1fr;
+  }
+  .event-container {
+    grid-template-columns: 1fr;
+  }
+  .event-left {
+    height: 100%;
+  }
+  .event-right {
+    padding: 1rem 2rem 1rem 0;
+  }
+  .popular-img {
+    height: 80vh;
+  }
+  .popular-category {
+    font-size: 1rem;
+  }
+  .testimonial-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 95vw;
+  }
 }

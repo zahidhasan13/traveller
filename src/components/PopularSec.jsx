@@ -23,7 +23,7 @@ const popular = [
 
 const PopularSec = () => {
   return (
-    <section className="popular">
+    <section id="popular-destination" className="popular">
       <div className="container">
         <h2 className="section-title">popular destination</h2>
       </div>

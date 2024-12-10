@@ -45,7 +45,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import TestimonialItem from "./TestimonialItem";
 const TestimonialSec = () => {
   return (
-    <section className="testimonial">
+    <section id="testimonial" className="testimonial">
       <div className="container">
         <h2 className="section-title">testimonials</h2>
         <Swiper

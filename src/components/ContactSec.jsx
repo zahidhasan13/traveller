@@ -18,7 +18,7 @@ const ContactSec = () => {
   ];
   useContactAnimation(contactRef, contactContainerRef);
   return (
-    <section className="contact" ref={contactContainerRef}>
+    <section id="contact" className="contact" ref={contactContainerRef}>
       <div className="container">
         <div className="contact-content">
           <h2 className="contact-title" ref={contactTitleRef}>

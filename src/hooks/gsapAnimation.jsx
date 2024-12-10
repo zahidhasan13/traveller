@@ -109,7 +109,7 @@ export const useFeatureLeftShutterUnveil = (item, trig) => {
         scrollTrigger: {
           trigger: trig.current,
           start: "top center",
-          end: "bottom center",
+          end: "bottom 10%",
           toggleActions: "play reverse play reverse",
         },
       }
@@ -275,7 +275,7 @@ export const useEventAnimation = (arr) => {
           scrollTrigger: {
             trigger: item,
             start: "top 50%",
-            toggleActions: "play none none reverse",
+            toggleActions: "play reverse play reverse",
           },
         }
       );
@@ -329,6 +329,7 @@ export const useFooterAnimation = (arr, trig) => {
         stagger: 0.3,
         scrollTrigger: {
           trigger: trig.current,
+          start: "top 1%",
           toggleActions: "play",
         },
       }

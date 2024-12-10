@@ -13,7 +13,7 @@ const FeatureSec = () => {
   useFeatureLeftShutterUnveil(featureLeftShutterRef, featureRef);
   useFeatureRightShutterUnveil(featureRightShutterRef, featureRef);
   return (
-    <section className="feature container" ref={featureRef}>
+    <section id="featured" className="feature container" ref={featureRef}>
       <h2 className="section-title">featured</h2>
       <div className="features">
         <div className="features-left">
