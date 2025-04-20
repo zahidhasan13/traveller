@@ -312,27 +312,27 @@ export const useContactAnimation = (arr, trig) => {
 };
 
 // Footer
-export const useFooterAnimation = (arr, trig) => {
-  useEffect(() => {
-    const el = arr.map((item) => item.current);
+// export const useFooterAnimation = (arr, trig) => {
+//   useEffect(() => {
+//     const el = arr.map((item) => item.current);
 
-    gsap.fromTo(
-      el,
-      {
-        y: "100vw",
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.5,
-        stagger: 0.3,
-        scrollTrigger: {
-          trigger: trig.current,
-          start: "top 1%",
-          toggleActions: "play",
-        },
-      }
-    );
-  }, []);
-};
+//     gsap.fromTo(
+//       el,
+//       {
+//         y: "100vw",
+//         opacity: 0,
+//       },
+//       {
+//         y: 0,
+//         opacity: 1,
+//         duration: 0.5,
+//         stagger: 0.3,
+//         scrollTrigger: {
+//           trigger: trig.current,
+//           start: "top 1%",
+//           toggleActions: "play",
+//         },
+//       }
+//     );
+//   }, []);
+// };

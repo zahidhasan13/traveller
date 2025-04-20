@@ -9,7 +9,7 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { useFooterAnimation } from "../hooks/gsapAnimation";
+// import { useFooterAnimation } from "../hooks/gsapAnimation";
 
 const Footer = () => {
   const footerRef = useRef(null);
@@ -18,13 +18,13 @@ const Footer = () => {
   const footerSocialRef = useRef(null);
   const footerRightRef = useRef(null);
 
-  const footerContentRef = [
-    footerLogoRef,
-    footerSubtitleRef,
-    footerSocialRef,
-    footerRightRef,
-  ];
-  useFooterAnimation(footerContentRef, footerRef);
+  // const footerContentRef = [
+  //   footerLogoRef,
+  //   footerSubtitleRef,
+  //   footerSocialRef,
+  //   footerRightRef,
+  // ];
+  // useFooterAnimation(footerContentRef, footerRef);
   return (
     <footer className="footer" ref={footerRef}>
       <div className="container">
